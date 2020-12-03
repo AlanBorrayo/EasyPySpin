@@ -45,7 +45,7 @@ class VideoCapture:
             raise TypeError("Argument 'index' is required to be an integer or a string")
 
         # Cerate system instance and get camera list 
-        self._system = PySpin.System.GetInstance()
+        self._system = PySpin.system.GetInstance()
         self._cam_list = self._system.GetCameras()
         num_cam = self._cam_list.GetSize()
 
